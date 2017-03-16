@@ -28,8 +28,7 @@ mod.register = () => {
 mod.handleFlagFound = flag => {
     // if it is a reserve, exploit or remote mine flag
     if( flag.color == FLAG_COLOR.claim.reserve.color && flag.secondaryColor == FLAG_COLOR.claim.reserve.secondaryColor ||
-        flag.color == FLAG_COLOR.invade.exploit.color && flag.secondaryColor == FLAG_COLOR.invade.exploit.secondaryColor ||
-        flag.color == FLAG_COLOR.claim.mining.color && flag.secondaryColor == FLAG_COLOR.claim.mining.secondaryColor){
+        flag.color == FLAG_COLOR.invade.exploit.color && flag.secondaryColor == FLAG_COLOR.invade.exploit.secondaryColor){
         // check if a new creep has to be spawned
         Task.reserve.checkForRequiredCreeps(flag);
     }
