@@ -103,7 +103,7 @@
     <Content Include="mainInjection.js" />
     <Content Include="parameter.js" />
     <Content Include="population.js" />
-    <Content Include="README.md" />
+    <Content Include="OCSREADME.md" />
     <Content Include="room.js" />
     <Content Include="spawn.js" />
     <Content Include="statistics.js" />
