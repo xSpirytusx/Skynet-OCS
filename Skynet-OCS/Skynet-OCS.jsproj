@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="commands.js" />
+    <Content Include="creep.action.attackController.js" />
+    <Content Include="creep.action.avoiding.js" />
+    <Content Include="creep.action.building.js" />
+    <Content Include="creep.action.charging.js" />
+    <Content Include="creep.action.claiming.js" />
+    <Content Include="creep.action.defending.js" />
+    <Content Include="creep.action.dismantling.js" />
+    <Content Include="creep.action.dropping.js" />
+    <Content Include="creep.action.feeding.js" />
+    <Content Include="creep.action.fortifying.js" />
+    <Content Include="creep.action.fueling.js" />
+    <Content Include="creep.action.guarding.js" />
+    <Content Include="creep.action.harvesting.js" />
+    <Content Include="creep.action.healing.js" />
+    <Content Include="creep.action.idle.js" />
+    <Content Include="creep.action.invading.js" />
+    <Content Include="creep.Action.js" />
+    <Content Include="creep.action.picking.js" />
+    <Content Include="creep.action.reallocating.js" />
+    <Content Include="creep.action.recycling.js" />
+    <Content Include="creep.action.repairing.js" />
+    <Content Include="creep.action.reserving.js" />
+    <Content Include="creep.action.robbing.js" />
+    <Content Include="creep.action.storing.js" />
+    <Content Include="creep.action.travelling.js" />
+    <Content Include="creep.action.uncharging.js" />
+    <Content Include="creep.action.upgrading.js" />
+    <Content Include="creep.action.withdrawing.js" />
+    <Content Include="creep.behaviour.claimer.js" />
+    <Content Include="creep.behaviour.hauler.js" />
+    <Content Include="creep.behaviour.healer.js" />
+    <Content Include="creep.behaviour.melee.js" />
+    <Content Include="creep.behaviour.miner.js" />
+    <Content Include="creep.behaviour.mineralMiner.js" />
+    <Content Include="creep.behaviour.pioneer.js" />
+    <Content Include="creep.behaviour.privateer.js" />
+    <Content Include="creep.behaviour.ranger.js" />
+    <Content Include="creep.behaviour.recycler.js" />
+    <Content Include="creep.behaviour.remoteHauler.js" />
+    <Content Include="creep.behaviour.remoteMiner.js" />
+    <Content Include="creep.behaviour.remoteWorker.js" />
+    <Content Include="creep.behaviour.upgrader.js" />
+    <Content Include="creep.behaviour.worker.js" />
+    <Content Include="creep.js" />
+    <Content Include="creep.setup.hauler.js" />
+    <Content Include="creep.setup.healer.js" />
+    <Content Include="creep.Setup.js" />
+    <Content Include="creep.setup.miner.js" />
+    <Content Include="creep.setup.mineralMiner.js" />
+    <Content Include="creep.setup.privateer.js" />
+    <Content Include="creep.setup.upgrader.js" />
+    <Content Include="creep.setup.worker.js" />
+    <Content Include="events.js" />
+    <Content Include="extensions.js" />
+    <Content Include="flagDir.js" />
+    <Content Include="global.js" />
+    <Content Include="grafana.js" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="main.js" />
+    <Content Include="mainInjection.js" />
+    <Content Include="parameter.js" />
+    <Content Include="population.js" />
+    <Content Include="README.md" />
+    <Content Include="room.js" />
+    <Content Include="spawn.js" />
+    <Content Include="statistics.js" />
+    <Content Include="strategy.js" />
+    <Content Include="task.attackController.js" />
+    <Content Include="task.claim.js" />
+    <Content Include="task.defense.js" />
+    <Content Include="task.guard.js" />
+    <Content Include="task.js" />
+    <Content Include="task.mining.js" />
+    <Content Include="task.pioneer.js" />
+    <Content Include="task.reputation.js" />
+    <Content Include="task.reserve.js" />
+    <Content Include="task.robbing.js" />
+    <Content Include="tower.js" />
+    <Content Include="visuals.js" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>6eb1290a-bca2-4df2-bf2d-5632e2e9e94d</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>Skynet-OCS_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
