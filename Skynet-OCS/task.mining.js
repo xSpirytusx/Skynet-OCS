@@ -474,19 +474,19 @@ mod.strategies = {
     defaultStrategy: {
         name: `default-${mod.name}`,
     },
-    reserve: {
-        spawnParams: function(flag) {
-            const population = mod.carryPopulation(flag.pos.roomName);
-
-            if( population < REMOTE_RESERVE_HAUL_CAPACITY ) {
+    //reserve: {
+     //   spawnParams: function(flag) {
+       //     const population = mod.carryPopulation(flag.pos.roomName);
+    //
+         //   if( population < REMOTE_RESERVE_HAUL_CAPACITY ) {
                 // TODO if this room & all exits are currently reserved (by anyone) then use default to prevent Invaders?
-                if( DEBUG && TRACE ) trace('Task', {flagName:flag.name, pos:flag.pos, population, spawnParams:'population', [mod.name]:'spawnParams', Task:mod.name});
-                return {count: 0, priority: 'Low'};
-            }
-
-            return Task.reserve.strategies.defaultStrategy.spawnParams(flag);
-        }
-    },
+          //      if( DEBUG && TRACE ) trace('Task', {flagName:flag.name, pos:flag.pos, population, spawnParams:'population', [mod.name]:'spawnParams', Task:mod.name});
+          //      return {count: 0, priority: 'Low'};
+           // }
+    //
+           // return Task.reserve.strategies.defaultStrategy.spawnParams(flag);
+       // }
+   // },
     hauler: {
         name: `hauler-${mod.name}`,
         homeRoom: function(flagRoomName) {
